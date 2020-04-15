@@ -1,11 +1,8 @@
-const numbers = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
-
+const numbers = ['One', 'Two', 'Three', 'Four', 'Five', 'Six'];
 
 // numbers[1] = 'somthing'
 
 // console.log(numbers);
-
-
 
 //start
 
@@ -16,8 +13,6 @@ const numbers = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
 // numbers.unshift('Somthing')
 // console.log(numbers);
 
-
-
 //end
 // console.log("The element to be deleted is : " + numbers.pop());
 // console.log(numbers);
@@ -25,9 +20,11 @@ const numbers = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
 // numbers.push('Seven')
 // console.log(numbers);
 
-
-
 //Middle
-numbers.splice(2, 1, 'Somthing')
+numbers.splice(2, 1, 'Somthing');
 console.log(numbers);
 
+let sum = [1, 2, 3].reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+});
+console.log(sum);
