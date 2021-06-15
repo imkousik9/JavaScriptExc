@@ -11,7 +11,7 @@ let myTodos = {
   meetingDone: function (num) {
     this.meetDone = this.meetDone - num;
   },
-  // ok
+
   resetDay: function () {
     this.meetings = 0;
     this.meetDone = 0;
