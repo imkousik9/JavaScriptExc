@@ -20,11 +20,13 @@ const numbers = ['One', 'Two', 'Three', 'Four', 'Five', 'Six'];
 // numbers.push('Seven')
 // console.log(numbers);
 
+console.log(numbers.fill(0, 1, 3));
+
 //Middle
 numbers.splice(2, 1, 'Somthing');
-console.log(numbers);
+// console.log(numbers);
 
 let sum = [1, 2, 3].reduce(function (accumulator, currentValue) {
   return accumulator + currentValue;
 });
-console.log(sum);
+// console.log(sum);
