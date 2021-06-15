@@ -1,0 +1,33 @@
+<button id="btn">Start setTimeout Counter</button>
+<button id="btn2">Start requestAnimationFrame Counter</button>
+<button id="btn3">Start Both Counter</button>
+<div>setTimeout counter:
+    <span id="st">0</span>
+</div>
+<div>requestAnimationFrame counter:
+    <span id="raf">0</span>
+</div>
+
+<script>
+    function stCounter(i) {
+        st.innerText = i
+        setTimeout(() => {
+            stCounter(i + 1)
+        }, 0)
+    }
+
+    function rafCounter(i) {
+        raf.innerText = i
+        requestAnimationFrame(() => {
+            rafCounter(i + 1)
+        })
+    }
+    // const btn = document.querySelector("#btn")
+    // const btn2 = document.querySelector("#btn2")
+    btn.addEventListener('click', () => stCounter(0), false)
+    btn2.addEventListener('click', () => rafCounter(0), false)
+    btn3.addEventListener('click', () => {
+        rafCounter(0)
+        stCounter(0)
+    }, false)
+</script>

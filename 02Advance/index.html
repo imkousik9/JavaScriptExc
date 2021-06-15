@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Kill main </button>
+    <script>
+        // Elent loop
+        function blockEevtLoop(i) {
+            console.log("i was called!");
+            // while (true);
+            // blockEevtLoop(i + 1)
+            setTimeout(blockEevtLoop, 0);
+        }
+        const btn = document.querySelector("body > button")
+        btn.addEventListener('click', () => blockEevtLoop(0), false)
+    </script>
+
+    <p>Some text</p>
+    <button>button</button>
+    <input type="text" name="" id="">
+</body>
+
+</html>
