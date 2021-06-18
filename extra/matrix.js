@@ -18,5 +18,4 @@ function zeroArray(m, n) {
 }
 
 let matrix = zeroArray(3, 2);
-
 console.log(matrix);
